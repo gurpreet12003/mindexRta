@@ -201,13 +201,13 @@ export default function App() {
               <div className="lg:col-span-5">
                 <div className="relative">
                   <div className="absolute inset-0 bg-red-600 rounded-lg translate-x-3 translate-y-3" />
-                  <div className="relative bg-white border-2 border-neutral-900 rounded-lg p-7 shadow-xl">
+                  <div className="relative bg-white border-2 border-red-600 rounded-lg p-7 shadow-xl">
                     <div className="flex items-center justify-between mb-6">
                       <div>
                         <div className="text-xs uppercase tracking-widest text-neutral-500 font-semibold">
                           Quick Quote
                         </div>
-                        <div className="font-bold text-lg">Talk to an RTA expert</div>
+                        <div className="font-bold text-red-600 text-lg">Talk to an RTA expert</div>
                       </div>
                       <div className="w-10 h-10 bg-black flex items-center justify-center rounded">
                         <FileSpreadsheet className="w-5 h-5 text-white" />
@@ -281,7 +281,7 @@ export default function App() {
 
                       <button
                         type="submit"
-                        className="w-full bg-black hover:bg-neutral-800 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
+                        className="w-full bg-red-600 hover:bg-neutral-800 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
                       >
                         Request Callback
                         <ArrowRight className="w-4 h-4" />
