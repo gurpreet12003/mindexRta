@@ -21,6 +21,10 @@ import {
   Award,
   Clock,
   Lock,
+
+   HandCoins,
+  Building2,
+    BanknoteArrowUp,
 } from "lucide-react";
 import { useState } from "react";
 import React from "react";
@@ -133,171 +137,169 @@ export default function App() {
         </div>
       </header>
       {/* ============= HERO ============= */}
-      <Reveal>
 
 
-        <section className="relative overflow-hidden bg-white border-b border-neutral-200">
 
-          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
+      <section className="relative overflow-hidden bg-white border-b border-neutral-200">
 
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-28">
-            <div className="grid lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-7">
-                <div className="inline-flex items-center gap-2 bg-red-50 border border-red-200 px-3 py-1.5 rounded-full mb-6">
-                  <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
-                  <span className="text-xs font-semibold text-red-700 uppercase tracking-wider">
-                    SEBI Registered • Category I RTA
-                  </span>
-                </div>
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] mb-6">
-                  India's Trusted{" "}
-                  <span className="relative inline-block">
-                    <span className="relative  text-red-600">Registrar & Transfer</span>
-
-                  </span>{" "}
-                  Agent Services
-                </h1>
-
-                <p className="text-lg text-neutral-600 mb-8 max-w-2xl leading-relaxed">
-                  End-to-end share registry, IPO, dematerialization, and corporate action services
-                  for listed companies, mutual funds, and unlisted entities. Powered by secure
-                  technology and 25+ years of compliance expertise.
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-3 mb-10">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3.5 rounded transition-colors"
-                  >
-                    Schedule a Consultation
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="#services"
-                    className="inline-flex items-center justify-center gap-2 bg-white hover:bg-neutral-50 text-neutral-900 font-semibold px-6 py-3.5 rounded border-2 border-neutral-900 transition-colors"
-                  >
-                    Explore Services
-                  </a>
-                </div>
-
-                <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-neutral-600">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600" />
-                    SEBI Reg. No. INR000000XXX
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600" />
-                    ISO 27001 Certified
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600" />
-                    NSDL & CDSL Connected
-                  </div>
-                </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-28">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 bg-red-50 border border-red-200 px-3 py-1.5 rounded-full mb-6">
+                <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
+                <span className="text-xs font-semibold text-red-700 uppercase tracking-wider">
+                  SEBI Registered • Category I Registrar and Transfer Agent (RTA)
+                </span>
               </div>
 
-              {/* Hero side card */}
-              <div className="lg:col-span-5">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-red-600 rounded-lg translate-x-3 translate-y-3" />
-                  <div className="relative bg-white border-2 border-red-600 rounded-lg p-7 shadow-xl">
-                    <div className="flex items-center justify-between mb-6">
-                      <div>
-                        <div className="text-xs uppercase tracking-widest text-neutral-500 font-semibold">
-                          Quick Quote
-                        </div>
-                        <div className="font-bold text-red-600 text-lg">Talk to an RTA expert</div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] mb-6">
+                India's Trusted{" "}
+                <span className="relative inline-block">
+                  <span className="relative  text-red-600">Registrar & Transfer</span>
+
+                </span>{" "}
+                Agent Services Provider
+              </h1>
+
+              <p className="text-lg text-neutral-600 mb-8 max-w-2xl leading-relaxed">
+                Delivering end-to-end registrar and transfer agent solutions with excellence, integrity, and regulatory precision. We specialize in share registry management, IPO processing, dematerialization, corporate actions, investor servicing, and compliance support for issuer companies, mutual funds, and unlisted entities across India. Backed by secure technology infrastructure and over 25 years of industry expertise, we ensure seamless operations, data accuracy, and trusted stakeholder support at every stage of the RTA Services
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-3 mb-10">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3.5 rounded transition-colors"
+                >
+                  Schedule a Consultation
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <a
+                  href="#services"
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-neutral-50 text-neutral-900 font-semibold px-6 py-3.5 rounded border-2 border-neutral-900 transition-colors"
+                >
+                  Explore Services
+                </a>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-neutral-600">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-red-600" />
+                  SEBI REG. NO. INR000004307
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-red-600" />
+                  ISO 27001 Certified
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-red-600" />
+                  CONNECTED WITH  NSDL & CDSL
+                </div>
+              </div>
+            </div>
+
+            {/* Hero side card */}
+            <div className="lg:col-span-5">
+              <div className="relative">
+                <div className="absolute inset-0 bg-red-600 rounded-lg translate-x-3 translate-y-3" />
+                <div className="relative bg-white border-2 border-red-600 rounded-lg p-7 shadow-xl">
+                  <div className="flex items-center justify-between mb-6">
+                    <div>
+                      <div className="text-xs uppercase tracking-widest text-neutral-500 font-semibold">
+                        Quick Quote
                       </div>
-                      <div className="w-10 h-10 bg-black flex items-center justify-center rounded">
-                        <FileSpreadsheet className="w-5 h-5 text-white" />
-                      </div>
+                      <div className="font-bold text-red-600 text-lg">Talk to an RTA expert</div>
+                    </div>
+                    <div className="w-10 h-10 bg-black flex items-center justify-center rounded">
+                      <FileSpreadsheet className="w-5 h-5 text-white" />
+                    </div>
+                  </div>
+
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-4"
+                  >
+                    {/* Hidden Fields */}
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_subject" value="New BharatRTA Lead" />
+                    <input type="hidden" name="_template" value="table" />
+
+                    <div>
+                      <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
+                        Company Name
+                      </label>
+                      <input
+                        type="text"
+                        name="companyName"
+                        placeholder="Acme Industries Ltd."
+                        className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
+                      />
                     </div>
 
-                    <form
-                      onSubmit={handleSubmit}
-                      className="space-y-4"
-                    >
-                      {/* Hidden Fields */}
-                      <input type="hidden" name="_captcha" value="false" />
-                      <input type="hidden" name="_subject" value="New BharatRTA Lead" />
-                      <input type="hidden" name="_template" value="table" />
-
+                    <div className="grid grid-cols-2 gap-3">
                       <div>
                         <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                          Company Name
+                          Contact Person
                         </label>
                         <input
                           type="text"
-                          name="companyName"
-                          placeholder="Acme Industries Ltd."
+                          name="contactPerson"
+                          placeholder="Full name"
                           className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
                         />
                       </div>
 
-                      <div className="grid grid-cols-2 gap-3">
-                        <div>
-                          <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                            Contact Person
-                          </label>
-                          <input
-                            type="text"
-                            name="contactPerson"
-                            placeholder="Full name"
-                            className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
-                          />
-                        </div>
-
-                        <div>
-                          <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                            Mobile
-                          </label>
-                          <input
-                            type="tel"
-                            name="mobile"
-                            placeholder="+91"
-                            className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
-                          />
-                        </div>
-                      </div>
-
                       <div>
                         <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                          Service Required
+                          Mobile
                         </label>
-
-                        <select
-                          name="service"
-                          className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 bg-white"
-                        >
-                          <option>IPO / FPO Services</option>
-                          <option>Share Transfer & Transmission</option>
-                          <option>Dematerialization</option>
-                          <option>IEPF Recovery</option>
-                          <option>Corporate Actions</option>
-                          <option>Mutual Fund RTA</option>
-                        </select>
+                        <input
+                          type="tel"
+                          name="mobile"
+                          placeholder="+91"
+                          className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
+                        />
                       </div>
+                    </div>
 
-                      <button
-                        type="submit"
-                        className="w-full bg-red-600 hover:bg-neutral-800 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
+                    <div>
+                      <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
+                        Service Required
+                      </label>
+
+                      <select
+                        name="service"
+                        className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 bg-white"
                       >
-                        Request Callback
-                        <ArrowRight className="w-4 h-4" />
-                      </button>
+                        <option>IPO / FPO Services</option>
+                        <option>Share Transfer & Transmission</option>
+                        <option>Dematerialization</option>
+                        <option>IEPF Recovery</option>
+                        <option>Corporate Actions</option>
+                        <option>Mutual Fund RTA</option>
+                      </select>
+                    </div>
 
-                      <p className="text-[11px] text-neutral-500 text-center">
-                        We respond within 4 business hours.
-                      </p>
-                    </form>
-                  </div>
+                    <button
+                      type="submit"
+                      className="w-full bg-red-600 hover:bg-neutral-800 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
+                    >
+                      Request Callback
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+
+                    <p className="text-[11px] text-neutral-500 text-center">
+                      We Respond with 24 business hours.
+                    </p>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </Reveal>
+        </div>
+      </section>
+
 
       <Reveal>
 
@@ -307,7 +309,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
               {[
-                { value: "850+", label: "Corporate Clients" },
+                { value: "1000+", label: "Corporate Clients" },
                 { value: "₹2.4L Cr", label: "Assets Serviced" },
                 { value: "25+", label: "Years of Expertise" },
                 { value: "4.2 Cr", label: "Investor Folios" },
@@ -328,7 +330,6 @@ export default function App() {
 
       <Reveal>
 
-
         {/* ============= SERVICES ============= */}
         <section id="services" className="py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -337,11 +338,10 @@ export default function App() {
                 — Our Services
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-5">
-                Complete <span className="text-red-600">RTA solutions </span>  for every stage of your equity lifecycle
+                Explore the comprehensive <span className="text-red-600">RTA solutions </span>   designed to support every stage of your Securities
               </h2>
               <p className="text-neutral-600 text-lg">
-                From IPO management to ongoing investor servicing, we handle every regulatory and
-                operational aspect so you can focus on growing your business.
+                from ISIN activation to IPO management, dematerialization, corporate actions, investor servicing, reconciliation, and regulatory compliance. Our technology-driven approach, combined with deep industry expertise, ensures seamless execution, transparent processes, and reliable support for issuer companies.
               </p>
             </div>
 
@@ -350,7 +350,7 @@ export default function App() {
                 {
                   icon: TrendingUp,
                   title: "IPO & FPO Services",
-                  desc: "End-to-end IPO registry — application processing, allotment, refunds, and listing assistance with SEBI/Stock Exchange coordination.",
+                  desc: "End-to-end IPO & FPO Services— application processing, allotment, refund handling, and listing assistance with SEBI/Stock Exchange coordination.",
                 },
                 {
                   icon: ArrowRightLeft,
@@ -360,20 +360,20 @@ export default function App() {
                 {
                   icon: RefreshCcw,
                   title: "Dematerialization",
-                  desc: "Connectivity with NSDL & CDSL for demat, remat, and corporate benefits credit. Process physical-to-electronic conversions efficiently.",
+                  desc: "Secure, technology-driven dematerialization services ensuring accurate, compliant, and efficient conversion of physical shares into electronic securities.",
                 },
                 {
-                  icon: FileSearch,
+                  icon: HandCoins,
                   title: "IEPF Recovery",
                   desc: "Assistance to investors and companies for unclaimed dividends and shares recovery from the Investor Education & Protection Fund.",
                 },
                 {
-                  icon: Briefcase,
+                  icon: Building2,
                   title: "Corporate Actions",
-                  desc: "Dividend distribution, bonus issues, rights issues, buybacks, splits, and amalgamations — executed with precision and timeliness.",
+                  desc: "Corporate Actions like dividends, bonus, splits, rights, and buybacks managed with full regulatory compliance and accurate investor record updates .",
                 },
                 {
-                  icon: Landmark,
+                  icon: BanknoteArrowUp,
                   title: "Mutual Fund RTA",
                   desc: "Full-service registry for AMCs including NAV processing, transaction management, KYC, and statutory reporting to SEBI/AMFI.",
                 },
@@ -404,100 +404,140 @@ export default function App() {
 
 
         {/* ============= ABOUT / WHY US ============= */}
-        <section id="about" className="py-20 md:py-28 bg-neutral-50 border-y border-neutral-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <div className="text-xs uppercase tracking-widest text-red-600 font-bold mb-3">
-                  — Why Choose BharatRTA
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-6">
-                  Built on trust. Powered by technology.{" "}
-                  <span className="text-red-600">Compliant by design.</span>
-                </h2>
-                <p className="text-neutral-600 text-lg mb-8">
-                  As a SEBI-registered Category I Registrar and Share Transfer Agent, we serve some of
-                  India's most respected listed companies, asset management firms, and growing SMEs
-                  with uncompromising service standards.
-                </p>
+      <section id="about" className="py-20 md:py-28 bg-neutral-50 border-y border-neutral-200">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="space-y-5">
-                  {[
-                    {
-                      icon: ShieldCheck,
-                      title: "Bank-grade Security & Compliance",
-                      desc: "ISO 27001 certified infrastructure, encrypted data exchange with depositories, and full audit trails for every transaction.",
-                    },
-                    {
-                      icon: Clock,
-                      title: "Industry-Leading Turnaround",
-                      desc: "95%+ of share transfers, dematerialization, and corporate actions completed well ahead of regulatory timelines.",
-                    },
-                    {
-                      icon: Award,
-                      title: "Dedicated Relationship Manager",
-                      desc: "Every corporate client is assigned a senior RM and a backup team for 24x7 access and zero-downtime operations.",
-                    },
-                  ].map((item) => (
-                    <div key={item.title} className="flex gap-4">
-                      <div className="flex-shrink-0 w-11 h-11 bg-white border-2 border-neutral-900 flex items-center justify-center rounded">
-                        <item.icon className="w-5 h-5 text-red-600" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-base mb-1">{item.title}</h4>
-                        <p className="text-sm text-neutral-600">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
+    <div>
+      <div className="text-xs uppercase tracking-widest text-red-600 font-bold mb-3">
+        — -Why Choose Mindex RTA
+      </div>
+
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-6 text-red-600">
+        Trust- Technology- Transparency.{" "}
+        <span className="text-black">
+          (Trusted by Clients, Powered by Technology & work with Transparency)
+        </span>
+      </h2>
+
+      <p className="text-neutral-600 text-lg mb-8">
+        SEBI-registered Category I Registrar and Share Transfer Agent, we proudly serve India’s most respected companies and fast-growing SMEs. With uncompromising service standards, strong regulatory expertise, and technology-driven processes, we ensure accurate, secure, and efficient handling of investor records, corporate actions, and end-to-end share registry services across the capital market ecosystem.
+      </p>
+
+      {/* Parallel Section */}
+      <div className="grid lg:grid-cols-2 gap-12 items-start mt-20 ">
+
+        {/* Left Content */}
+        <div className="space-y-5">
+          {[
+            {
+              icon: ShieldCheck,
+              title: "Strong security framework with full compliance",
+              desc: "Designed to safeguard data and ensure complete adherence to SEBI and depository regulations. Our systems are built with advanced security protocols, audit-ready Systems, and continuous monitoring to maintain data integrity, confidentiality, and regulatory accuracy",
+            },
+            {
+              icon: Clock,
+              title: "Benchmark turnaround performance",
+              desc: "Serving industry-leading speed, accuracy, and efficiency with streamlined, technology-driven processes that ensure faster execution, reduced turnaround time, and consistent regulatory compliance across all RTA operations.",
+            },
+            {
+              icon: Award,
+              title: "Dedicated Relationship Manager",
+              desc: "Providing personalized support, proactive communication, and end-to-end assistance to ensure smooth coordination, faster resolution of queries, and seamless service experience with our professional Experts.",
+            },
+          ].map((item) => (
+            <div key={item.title} className="flex gap-4">
+              <div className="flex-shrink-0 w-11 h-11 bg-white border-2 border-neutral-900 flex items-center justify-center rounded">
+                <item.icon className="w-5 h-5 text-red-600" />
+              </div>
+
+              <div>
+                <h4 className="font-bold text-base mb-1">
+                  {item.title}
+                </h4>
+
+                <p className="text-sm text-neutral-600">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Right Cards */}
+        <div className="relative">
+          <div className="grid grid-cols-2 gap-4">
+
+            <div className="space-y-4 pt-8">
+              <div className="bg-white border border-neutral-200 p-6 rounded">
+                <Lock className="w-6 h-6 text-red-600 mb-3" />
+
+                <div className="font-bold text-3xl mb-1">
+                  99.98%
+                </div>
+
+                <div className="text-xs text-neutral-500 uppercase tracking-wider">
+                  System Uptime
                 </div>
               </div>
 
-              <div className="relative">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-4 pt-8">
-                    <div className="bg-white border border-neutral-200 p-6 rounded">
-                      <Lock className="w-6 h-6 text-red-600 mb-3" />
-                      <div className="font-bold text-3xl mb-1">99.98%</div>
-                      <div className="text-xs text-neutral-500 uppercase tracking-wider">
-                        System Uptime
-                      </div>
-                    </div>
-                    <div className="bg-black text-white p-6 rounded">
-                      <Users className="w-6 h-6 text-red-500 mb-3" />
-                      <div className="font-bold text-3xl mb-1">120+</div>
-                      <div className="text-xs text-neutral-400 uppercase tracking-wider">
-                        Expert Professionals
-                      </div>
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="bg-red-600 text-white p-6 rounded">
-                      <Award className="w-6 h-6 text-white mb-3" />
-                      <div className="font-bold text-3xl mb-1">Cat I</div>
-                      <div className="text-xs text-red-100 uppercase tracking-wider">
-                        SEBI Registration
-                      </div>
-                    </div>
-                    <div className="bg-white border border-neutral-200 p-6 rounded">
-                      <ShieldCheck className="w-6 h-6 text-red-600 mb-3" />
-                      <div className="font-bold text-3xl mb-1">ISO</div>
-                      <div className="text-xs text-neutral-500 uppercase tracking-wider">
-                        27001 Certified
-                      </div>
-                    </div>
-                    <div className="bg-white border border-neutral-200 p-6 rounded">
-                      <MapPin className="w-6 h-6 text-red-600 mb-3" />
-                      <div className="font-bold text-3xl mb-1">14</div>
-                      <div className="text-xs text-neutral-500 uppercase tracking-wider">
-                        Regional Offices
-                      </div>
-                    </div>
-                  </div>
+              <div className="bg-black text-white p-6 rounded">
+                <Users className="w-6 h-6 text-red-500 mb-3" />
+
+                <div className="font-bold text-3xl mb-1">
+                  120+
+                </div>
+
+                <div className="text-xs text-neutral-400 uppercase tracking-wider">
+                  Expert Professionals
                 </div>
               </div>
             </div>
+
+            <div className="space-y-4">
+              <div className="bg-red-600 text-white p-6 rounded">
+                <Award className="w-6 h-6 text-white mb-3" />
+
+                <div className="font-bold text-3xl mb-1">
+                  Cat I
+                </div>
+
+                <div className="text-xs text-red-100 uppercase tracking-wider">
+                  SEBI Registration
+                </div>
+              </div>
+
+              <div className="bg-white border border-neutral-200 p-6 rounded">
+                <ShieldCheck className="w-6 h-6 text-red-600 mb-3" />
+
+                <div className="font-bold text-3xl mb-1">
+                  ISO
+                </div>
+
+                <div className="text-xs text-neutral-500 uppercase tracking-wider">
+                  27001 Certified
+                </div>
+              </div>
+
+              <div className="bg-white border border-neutral-200 p-6 rounded">
+                <MapPin className="w-6 h-6 text-red-600 mb-3" />
+
+                <div className="font-bold text-3xl mb-1">
+                  14
+                </div>
+
+                <div className="text-xs text-neutral-500 uppercase tracking-wider">
+                  Regional Offices
+                </div>
+              </div>
+            </div>
+
           </div>
-        </section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
       </Reveal>
       <Reveal>
 
@@ -558,14 +598,13 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mb-14">
               <div className="text-xs uppercase tracking-widest text-red-500 font-bold mb-3">
-                — Our Process
+                - Our Systematic Workflow
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-5">
-                A simple, transparent onboarding journey
+                A Simple, Transparent Onboarding Journey
               </h2>
               <p className="text-neutral-200 text-lg">
-                From initial consultation to going live, our structured process ensures full
-                regulatory compliance and zero operational disruption.
+                From initial consultation to get completed, our structured process ensures full regulatory compliance and zero operational disruption.
               </p>
             </div>
 
@@ -609,7 +648,7 @@ export default function App() {
               {[
                 {
                   quote:
-                    "BharatRTA migrated our entire investor base of 1.4 lakh folios within 21 days, with zero discrepancies. Their compliance team is exceptional.",
+                    "Mindex RTA migrated our entire investor base of 1.4 lakh folios within 21 days, with zero discrepancies. Their compliance team is exceptional.",
                   name: "Rajesh Menon",
                   title: "Company Secretary, Listed Manufacturer",
                 },
@@ -622,7 +661,7 @@ export default function App() {
                 },
                 {
                   quote:
-                    "Investor grievance resolution timelines have dropped from 14 days to under 48 hours since we moved to BharatRTA. Highly recommended.",
+                    "Investor grievance resolution timelines have dropped from 14 days to under 48 hours since we moved to Mindex RTA. Highly recommended.",
                   name: "Anil Krishnan",
                   title: "Director, Public Sector Bank",
                 },
