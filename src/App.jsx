@@ -22,9 +22,9 @@ import {
   Clock,
   Lock,
 
-   HandCoins,
+  HandCoins,
   Building2,
-    BanknoteArrowUp,
+  BanknoteArrowUp,
 } from "lucide-react";
 import { useState } from "react";
 import React from "react";
@@ -112,7 +112,7 @@ export default function App() {
 
                 <a
                   href="mailto:joinus@mindex.co.in"
-                  className="text-red-600 hover:text-red-700 transition-colors"
+                  className=" hover:text-red-700 transition-colors"
                 >
                   joinus@mindex.co.in
                 </a>
@@ -124,7 +124,7 @@ export default function App() {
 
                 <a
                   href="tel:+919876543210"
-                  className="text-red-600 hover:text-red-700 transition-colors"
+                  className=" hover:text-red-700 transition-colors"
                 >
                   +91 98765 43210
                 </a>
@@ -170,7 +170,7 @@ export default function App() {
               <div className="flex flex-col sm:flex-row gap-3 mb-10">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3.5 rounded transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-neutral-800 hover:bg-red-600 text-white font-semibold px-6 py-3.5 rounded transition-colors"
                 >
                   Schedule a Consultation
                   <ArrowRight className="w-4 h-4" />
@@ -184,15 +184,12 @@ export default function App() {
               </div>
 
               <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-neutral-600">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-red-600" />
+                <div className="flex items-center gap-2 font-semibold">
+                  <CheckCircle2 className="w-4  h-4 text-red-600" />
                   SEBI REG. NO. INR000004307
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-red-600" />
-                  ISO 27001 Certified
-                </div>
-                <div className="flex items-center gap-2">
+                
+                <div className="flex items-center gap-2 font-semibold">
                   <CheckCircle2 className="w-4 h-4 text-red-600" />
                   CONNECTED WITH  NSDL & CDSL
                 </div>
@@ -202,14 +199,14 @@ export default function App() {
             {/* Hero side card */}
             <div className="lg:col-span-5">
               <div className="relative">
-                <div className="absolute inset-0 bg-red-600 rounded-lg translate-x-3 translate-y-3" />
-                <div className="relative bg-white border-2 border-red-600 rounded-lg p-7 shadow-xl">
+                <div className="absolute inset-2 bg-red-600 rounded-lg -translate-x-3 -translate-y-3   " />
+                <div className="relative bg-white  rounded-lg p-7 shadow-xl shadow-red-200">
                   <div className="flex items-center justify-between mb-6">
                     <div>
                       <div className="text-xs uppercase tracking-widest text-neutral-500 font-semibold">
                         Quick Quote
                       </div>
-                      <div className="font-bold text-red-600 text-lg">Talk to an RTA expert</div>
+                      <div className="font-bold  text-lg">Talk to an RTA expert</div>
                     </div>
                     <div className="w-10 h-10 bg-black flex items-center justify-center rounded">
                       <FileSpreadsheet className="w-5 h-5 text-white" />
@@ -222,7 +219,7 @@ export default function App() {
                   >
                     {/* Hidden Fields */}
                     <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_subject" value="New BharatRTA Lead" />
+                    <input type="hidden" name="_subject" value="New Mindex RTA Lead" />
                     <input type="hidden" name="_template" value="table" />
 
                     <div>
@@ -283,7 +280,7 @@ export default function App() {
 
                     <button
                       type="submit"
-                      className="w-full bg-red-600 hover:bg-neutral-800 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
+                      className="w-full bg-neutral-800 hover:bg-red-600 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
                     >
                       Request Callback
                       <ArrowRight className="w-4 h-4" />
@@ -333,7 +330,7 @@ export default function App() {
         {/* ============= SERVICES ============= */}
         <section id="services" className="py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mb-14">
+            <div className=" mb-14">
               <div className="text-xs uppercase tracking-widest text-red-600 font-bold mb-3">
                 — Our Services
               </div>
@@ -383,7 +380,7 @@ export default function App() {
                   className="group bg-white p-8 hover:bg-neutral-50 transition-colors cursor-pointer"
                 >
                   <div className="w-12 h-12 bg-red-50 group-hover:bg-red-600 flex items-center justify-center rounded mb-5 transition-colors">
-                    <service.icon className="w-6 h-6 text-red-600 group-hover:text-white transition-colors" />
+                    <service.icon className="w-6 h-6 text-black group-hover:text-white transition-colors" />
                   </div>
                   <h3 className="font-bold text-xl mb-3 text-neutral-900">{service.title}</h3>
                   <p className="text-neutral-600 text-sm leading-relaxed mb-5">{service.desc}</p>
@@ -404,140 +401,141 @@ export default function App() {
 
 
         {/* ============= ABOUT / WHY US ============= */}
-      <section id="about" className="py-20 md:py-28 bg-neutral-50 border-y border-neutral-200">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="about" className="py-20 md:py-28 bg-neutral-50 border-y border-neutral-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div>
-      <div className="text-xs uppercase tracking-widest text-red-600 font-bold mb-3">
-        — -Why Choose Mindex RTA
-      </div>
-
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-6 text-red-600">
-        Trust- Technology- Transparency.{" "}
-        <span className="text-black">
-          (Trusted by Clients, Powered by Technology & work with Transparency)
-        </span>
-      </h2>
-
-      <p className="text-neutral-600 text-lg mb-8">
-        SEBI-registered Category I Registrar and Share Transfer Agent, we proudly serve India’s most respected companies and fast-growing SMEs. With uncompromising service standards, strong regulatory expertise, and technology-driven processes, we ensure accurate, secure, and efficient handling of investor records, corporate actions, and end-to-end share registry services across the capital market ecosystem.
-      </p>
-
-      {/* Parallel Section */}
-      <div className="grid lg:grid-cols-2 gap-12 items-start mt-20 ">
-
-        {/* Left Content */}
-        <div className="space-y-5">
-          {[
-            {
-              icon: ShieldCheck,
-              title: "Strong security framework with full compliance",
-              desc: "Designed to safeguard data and ensure complete adherence to SEBI and depository regulations. Our systems are built with advanced security protocols, audit-ready Systems, and continuous monitoring to maintain data integrity, confidentiality, and regulatory accuracy",
-            },
-            {
-              icon: Clock,
-              title: "Benchmark turnaround performance",
-              desc: "Serving industry-leading speed, accuracy, and efficiency with streamlined, technology-driven processes that ensure faster execution, reduced turnaround time, and consistent regulatory compliance across all RTA operations.",
-            },
-            {
-              icon: Award,
-              title: "Dedicated Relationship Manager",
-              desc: "Providing personalized support, proactive communication, and end-to-end assistance to ensure smooth coordination, faster resolution of queries, and seamless service experience with our professional Experts.",
-            },
-          ].map((item) => (
-            <div key={item.title} className="flex gap-4">
-              <div className="flex-shrink-0 w-11 h-11 bg-white border-2 border-neutral-900 flex items-center justify-center rounded">
-                <item.icon className="w-5 h-5 text-red-600" />
+            <div>
+              <div className="text-xs uppercase tracking-widest text-red-600 font-bold mb-3">
+                — -Why Choose Mindex RTA
               </div>
 
-              <div>
-                <h4 className="font-bold text-base mb-1">
-                  {item.title}
-                </h4>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-6 text-red-600">
+                Trust- Technology- Transparency.{" "}
+              </h2>
+              <h4 className="text-black text-3xl  font-black tracking-tight mb-6">
 
-                <p className="text-sm text-neutral-600">
-                  {item.desc}
-                </p>
+                (Trusted by Clients, Powered by Technology & work with Transparency)
+
+              </h4>
+              <p className="text-neutral-600 text-lg mb-8">
+                SEBI-registered Category I Registrar and Share Transfer Agent, we proudly serve India’s most respected companies and fast-growing SMEs. With uncompromising service standards, strong regulatory expertise, and technology-driven processes, we ensure accurate, secure, and efficient handling of investor records, corporate actions, and end-to-end share registry services across the capital market ecosystem.
+              </p>
+
+              {/* Parallel Section */}
+              <div className="grid lg:grid-cols-2 gap-12 items-start mt-20 ">
+
+                {/* Left Content */}
+                <div className="space-y-5">
+                  {[
+                    {
+                      icon: ShieldCheck,
+                      title: "Strong security framework with full compliance",
+                      desc: "Designed to safeguard data and ensure complete adherence to SEBI and depository regulations. Our systems are built with advanced security protocols, audit-ready Systems, and continuous monitoring to maintain data integrity, confidentiality, and regulatory accuracy",
+                    },
+                    {
+                      icon: Clock,
+                      title: "Benchmark turnaround performance",
+                      desc: "Serving industry-leading speed, accuracy, and efficiency with streamlined, technology-driven processes that ensure faster execution, reduced turnaround time, and consistent regulatory compliance across all RTA operations.",
+                    },
+                    {
+                      icon: Award,
+                      title: "Dedicated Relationship Manager",
+                      desc: "Providing personalized support, proactive communication, and end-to-end assistance to ensure smooth coordination, faster resolution of queries, and seamless service experience with our professional Experts.",
+                    },
+                  ].map((item) => (
+                    <div key={item.title} className="flex gap-4">
+                      <div className="flex-shrink-0 w-11 h-11 bg-white border-2 border-neutral-900 flex items-center justify-center rounded">
+                        <item.icon className="w-5 h-5 text-red-600" />
+                      </div>
+
+                      <div>
+                        <h4 className="font-bold text-base mb-1">
+                          {item.title}
+                        </h4>
+
+                        <p className="text-sm text-neutral-600">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Right Cards */}
+                <div className="relative">
+                  <div className="grid grid-cols-2 gap-4">
+
+                    <div className="space-y-4 pt-8">
+                      <div className="bg-white border border-neutral-200 p-6 rounded">
+                        <Lock className="w-6 h-6 text-red-600 mb-3" />
+
+                        <div className="font-bold text-3xl mb-1">
+                          99.98%
+                        </div>
+
+                        <div className="text-xs text-neutral-500 uppercase tracking-wider">
+                          System Uptime
+                        </div>
+                      </div>
+
+                      <div className="bg-black text-white p-6 rounded">
+                        <Users className="w-6 h-6 text-red-500 mb-3" />
+
+                        <div className="font-bold text-3xl mb-1">
+                          120+
+                        </div>
+
+                        <div className="text-xs text-neutral-400 uppercase tracking-wider">
+                          Expert Professionals
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="bg-red-600 text-white p-6 rounded">
+                        <Award className="w-6 h-6 text-white mb-3" />
+
+                        <div className="font-bold text-3xl mb-1">
+                          Cat I
+                        </div>
+
+                        <div className="text-xs text-red-100 uppercase tracking-wider">
+                          SEBI Registration
+                        </div>
+                      </div>
+
+                      <div className="bg-white border border-neutral-200 p-6 rounded">
+                        <ShieldCheck className="w-6 h-6 text-red-600 mb-3" />
+
+                        <div className="font-bold text-3xl mb-1">
+                          ISO
+                        </div>
+
+                        <div className="text-xs text-neutral-500 uppercase tracking-wider">
+                          27001 Certified
+                        </div>
+                      </div>
+
+                      <div className="bg-white border border-neutral-200 p-6 rounded">
+                        <MapPin className="w-6 h-6 text-red-600 mb-3" />
+
+                        <div className="font-bold text-3xl mb-1">
+                          14
+                        </div>
+
+                        <div className="text-xs text-neutral-500 uppercase tracking-wider">
+                          Regional Offices
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Right Cards */}
-        <div className="relative">
-          <div className="grid grid-cols-2 gap-4">
-
-            <div className="space-y-4 pt-8">
-              <div className="bg-white border border-neutral-200 p-6 rounded">
-                <Lock className="w-6 h-6 text-red-600 mb-3" />
-
-                <div className="font-bold text-3xl mb-1">
-                  99.98%
-                </div>
-
-                <div className="text-xs text-neutral-500 uppercase tracking-wider">
-                  System Uptime
-                </div>
-              </div>
-
-              <div className="bg-black text-white p-6 rounded">
-                <Users className="w-6 h-6 text-red-500 mb-3" />
-
-                <div className="font-bold text-3xl mb-1">
-                  120+
-                </div>
-
-                <div className="text-xs text-neutral-400 uppercase tracking-wider">
-                  Expert Professionals
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <div className="bg-red-600 text-white p-6 rounded">
-                <Award className="w-6 h-6 text-white mb-3" />
-
-                <div className="font-bold text-3xl mb-1">
-                  Cat I
-                </div>
-
-                <div className="text-xs text-red-100 uppercase tracking-wider">
-                  SEBI Registration
-                </div>
-              </div>
-
-              <div className="bg-white border border-neutral-200 p-6 rounded">
-                <ShieldCheck className="w-6 h-6 text-red-600 mb-3" />
-
-                <div className="font-bold text-3xl mb-1">
-                  ISO
-                </div>
-
-                <div className="text-xs text-neutral-500 uppercase tracking-wider">
-                  27001 Certified
-                </div>
-              </div>
-
-              <div className="bg-white border border-neutral-200 p-6 rounded">
-                <MapPin className="w-6 h-6 text-red-600 mb-3" />
-
-                <div className="font-bold text-3xl mb-1">
-                  14
-                </div>
-
-                <div className="text-xs text-neutral-500 uppercase tracking-wider">
-                  Regional Offices
-                </div>
-              </div>
-            </div>
-
           </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
       </Reveal>
       <Reveal>
 
@@ -715,8 +713,8 @@ export default function App() {
 
                 <div className="space-y-5">
                   <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 bg-red-600 flex items-center justify-center rounded flex-shrink-0">
-                      <Phone className="w-5 h-5 text-white" />
+                    <div className="w-11 h-11 border  flex items-center justify-center rounded flex-shrink-0">
+                      <Phone className="w-5 h-5 text-red-600" />
                     </div>
                     <div>
                       <div className="text-xs uppercase tracking-wider text-neutral-500 font-semibold mb-0.5">
@@ -728,8 +726,8 @@ export default function App() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 bg-red-600 flex items-center justify-center rounded flex-shrink-0">
-                      <Mail className="w-5 h-5 text-white" />
+                    <div className="w-11 h-11 border flex items-center justify-center rounded flex-shrink-0">
+                      <Mail className="w-5 h-5 text-red-600" />
                     </div>
                     <div>
                       <div className="text-xs uppercase tracking-wider text-neutral-500 font-semibold mb-0.5">
@@ -741,8 +739,8 @@ export default function App() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 bg-red-600 flex items-center justify-center rounded flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-white" />
+                    <div className="w-11 h-11 border flex items-center justify-center rounded flex-shrink-0">
+                      <MapPin className="w-5 h-5 text-red-600" />
                     </div>
                     <div>
                       <div className="text-xs uppercase tracking-wider text-neutral-500 font-semibold mb-0.5">
@@ -755,91 +753,96 @@ export default function App() {
                   </div>
                 </div>
               </div>
+              {/* form */}
+              <div className="relative">
+                <div className="absolute  inset-2 bg-red-600 rounded-lg -translate-x-3 -translate-y-3" />
 
-              <div className="bg-white border-2 border-red-600 rounded-lg p-8 shadow-xl">
-                <h3 className="text-red-600 text-2xl mb-1">Request a Proposal</h3>
-                <p className="text-sm text-neutral-600 mb-6">
-                  Fill in your details — we'll send a tailored proposal within 24 hours.
-                </p>
+                <div className="relative bg-white rounded-lg p-10 shadow-xl shadow-red-200 ">
+                  <h3 className=" text-2xl mb-1 font-black text-black">Request a Proposal</h3>
+                  <p className="text-sm text-neutral-600 mb-6">
+                    Fill in your details — we'll send a tailored proposal within 24 hours.
+                  </p>
 
-                <form
-                  action="https://formsubmit.co/gurpreetsingh.b1203@gmail.com"
-                  method="POST"
-                  className="space-y-4"
-                >
-                  {/* Hidden Fields */}
-                  <input type="hidden" name="_captcha" value="false" />
-                  <input type="hidden" name="_subject" value="New BharatRTA Lead" />
-                  <input type="hidden" name="_template" value="table" />
+                  <form
+                    action="https://formsubmit.co/gurpreetsingh.b1203@gmail.com"
+                    method="POST"
+                    className="space-y-4"
+                  >
+                    {/* Hidden Fields */}
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_subject" value="New Mindex
+                   RTA Lead" />
+                    <input type="hidden" name="_template" value="table" />
 
-                  <div>
-                    <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                      Company Name
-                    </label>
-                    <input
-                      type="text"
-                      name="companyName"
-                      placeholder="Acme Industries Ltd."
-                      className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
-                    />
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-3">
                     <div>
                       <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                        Contact Person
+                        Company Name
                       </label>
                       <input
                         type="text"
-                        name="contactPerson"
-                        placeholder="Full name"
+                        name="companyName"
+                        placeholder="Acme Industries Ltd."
                         className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
                       />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3">
+                      <div>
+                        <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
+                          Contact Person
+                        </label>
+                        <input
+                          type="text"
+                          name="contactPerson"
+                          placeholder="Full name"
+                          className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
+                          Mobile
+                        </label>
+                        <input
+                          type="tel"
+                          name="mobile"
+                          placeholder="+91"
+                          className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
+                        />
+                      </div>
                     </div>
 
                     <div>
                       <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                        Mobile
+                        Service Required
                       </label>
-                      <input
-                        type="tel"
-                        name="mobile"
-                        placeholder="+91"
-                        className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600"
-                      />
+
+                      <select
+                        name="service"
+                        className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 bg-white"
+                      >
+                        <option>IPO / FPO Services</option>
+                        <option>Share Transfer & Transmission</option>
+                        <option>Dematerialization</option>
+                        <option>IEPF Recovery</option>
+                        <option>Corporate Actions</option>
+                        <option>Mutual Fund RTA</option>
+                      </select>
                     </div>
-                  </div>
 
-                  <div>
-                    <label className="block text-xs font-semibold text-neutral-700 mb-1.5">
-                      Service Required
-                    </label>
-
-                    <select
-                      name="service"
-                      className="w-full px-3.5 py-2.5 border border-neutral-300 rounded text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 bg-white"
+                    <button
+                      type="submit"
+                      className="w-full bg-neutral-800 hover:bg-red-600 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
                     >
-                      <option>IPO / FPO Services</option>
-                      <option>Share Transfer & Transmission</option>
-                      <option>Dematerialization</option>
-                      <option>IEPF Recovery</option>
-                      <option>Corporate Actions</option>
-                      <option>Mutual Fund RTA</option>
-                    </select>
-                  </div>
+                      Request Callback
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
 
-                  <button
-                    type="submit"
-                    className="w-full bg-red-600 hover:bg-neutral-800 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
-                  >
-                    Request Callback
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
-
-                  <p className="text-[11px] text-neutral-500 text-center">
-                    We respond within 4 business hours.
-                  </p>
-                </form>
+                    <p className="text-[11px] text-neutral-500 text-center">
+                      We respond within 24 business hours.
+                    </p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
